@@ -1,0 +1,416 @@
+body {
+    background-color: white;
+    box-sizing: border-box;
+    color: #343A40;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Animate classes */
+
+.hidden-footer {
+    opacity: 0;
+    transform: translateX(100%);
+    transition:all 1s;
+}
+.footer-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+.slide-in {
+    transform: translateX(-100%);
+}
+.slide-in-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+.slide-up {
+    opacity: 0;
+    transform: translateY(100%);
+}
+.slide-up-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.show {
+    opacity: 1;
+}
+
+/* Fonts */
+
+.title-copy {
+    font-family: 'Nunito', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
+.title-body-copy {
+    font-size: 1.5rem;
+}
+
+/* Header */
+
+.header-container {
+    height: fit-content;
+    background: #f5f5f5;
+    background-image: radial-gradient(circle at 0 0, #B22024, transparent 10%), radial-gradient(circle at 100% 100%, #343A40, transparent 10%);
+    padding-bottom: 100px;
+    position: relative;
+}
+.cloud-container {
+    position: absolute;
+    bottom: -200px;
+    right: 150px;
+}
+.cloud-img {
+    width:1200px;
+}
+.man-container {
+    position:absolute;
+    bottom: 0;
+    right: 10%;
+}
+.man1 {
+    height: 650px;
+    transform: scaleX(-1);
+}
+.navbar {
+    position:relative;
+    top: 0;
+    z-index: 20;
+}
+.navbar-on-scroll {
+    background-color: #f5f5f5;
+    filter:drop-shadow(0 4px 4px rgba(0,0,0,0.2));
+    height: fit-content;
+    left: 0;
+    padding: 0 10%;
+    position: fixed;
+    transition: 0.3s;
+    width: 100%;
+}
+.title-img-window {
+    background-color: white;
+    background-image: url(images/Fade-out-Dotted-DESATURATED-pexels-jeffry-surianto-11493642.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    height: 400px;
+    margin: 0 0 0 auto;
+}
+.title-row {
+    padding-top: 50px;
+}
+
+/* Nav */
+
+.comvey-logo {
+    width: 100px;
+}
+.comvey-logo-on-scroll {
+    width: 80px;
+}
+.nav-link:hover {
+    text-decoration: rgba(52,58,64,0.8) 4px underline;
+    text-underline-offset: 10px;
+}
+
+/* Nested Header */
+
+.nested-header {
+    padding: 0 10%;
+    z-index: 2;
+}
+
+/* Pricing Cards */
+
+#pricing {
+    background-color: #fff;
+    position:relative;
+    top:0;
+    z-index: 2;
+}
+
+.card {
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    width: 90%;
+}
+.card:hover {
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+.card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 200px;
+    object-fit: cover;
+}
+.card-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+.card-text {
+    line-height: 1;
+}
+.pricing-cards-row {
+    justify-content: space-around;
+    padding: 5% 15%;
+}
+.pricing-btn {
+    bottom: 20px;
+    font-size: 1.2rem;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    width: 70%;
+}
+#pricing {
+    text-align: center;
+}
+
+/* Testimonials */
+
+.testimonial-header-band {
+    background-color: #343A40;
+    color:#fff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    padding: 3% 10%;
+}
+#testimonial-carousel {
+    background-image: linear-gradient(#343A40,#B22024);
+    padding-bottom: 50px;
+}
+#testimonial-carousel h3 {
+    font-family: 'Nunito', sans-serif;
+}
+.carousel-img {
+    border-radius: 50%;
+    height: 400px;
+    margin: 0 auto;
+    object-fit: cover;
+    width: 400px;
+}
+.carousel-img-column {
+    height:fit-content;
+    margin: auto;
+}
+.carousel-text {
+    color:#343A40;
+    padding: 5% 5%;
+    text-align: left;
+}
+.carousel-inner {
+    padding: 0 10%;
+}
+.carousel-inner-pill-container {
+    background-color: #f5f5f5;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: #343A40;
+    border-radius: 50%;
+    bottom: 40px;
+    height: 20px;
+    margin: 0 10px;
+    position: relative;
+    width: 20px;
+}
+
+/* Newsletter CTA */
+
+#newsletter {
+    padding: 5% 10%;
+}
+.newsletter-cta {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 7% 7%;
+}
+.newsletter-cta a {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 10px 40px;
+}
+.newsletter-cta h3 {
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 20px;
+}
+.newsletter-collage {
+    padding: 0 5%;
+}
+.newsletter-collage img {
+    border-radius: 20px;
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+.collage-bottom-row {
+    margin-top: 20px;
+}
+
+/* Footer */
+
+.footer-brand-img {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    height: 100px;
+    padding: 20px;
+}
+.footer-row {
+    background-color: #343A40;
+    color: #fff;
+    padding: 5% 10%;
+}
+.footer-row h5 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    margin: 30px 0 20px;
+}
+.footer-icon {
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    color:#343A40;
+    height: 60px;
+    padding: 20px;
+    width: 60px;
+}
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+.map-container iframe {
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.social-icons {
+    display:flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 5% 0;
+    width: 650px;
+}
+
+/* Media Queries */
+
+@media (max-width:1900px) {
+    .cloud-container {
+        bottom: 0;
+    }
+    .cloud-img {
+        width: 900px;
+    }
+}
+@media (max-width:1500px) {
+    .carousel-text {
+        padding: 7%;
+    }
+    .cloud-container {
+        right: 50px;
+    }
+    .cloud-img {
+        width: 700px;
+    }
+    .man1 {
+        height: 500px;
+    }
+    .pricing-cards-row {
+        padding: 5% 10%;
+    }
+}
+@media (max-width:1350px) {
+    .carousel-text {
+        padding: 5% 10%;
+    }
+}
+@media (max-width:1215px) {
+    .carousel-text {
+        padding: 5% 15%;
+    }
+}
+@media (max-width:1070px) {
+    .carousel-text {
+        padding: 5% 17%;
+    }
+    .cloud-container {
+        right: 10px;
+    }
+}
+@media (max-width: 991px) {
+    .card-middle {
+        margin: 20px 0;
+    }
+    .carousel-img {
+        height: 300px;
+        margin-top: 20px;
+        width: 300px;
+    }
+    .carousel-img-column {
+        width: fit-content;
+    }
+    .cloud-img {
+        width: 800px;
+    }
+    .carousel-text-author {
+        margin-bottom: 30px;
+    }
+    .carousel-text {
+        text-align: center;
+    }
+    .footer-text-box {
+        text-align: center;
+    }
+    .newsletter-collage {
+        margin-top: 5%;
+        padding: 0;
+    }
+    .newsletter-collage img {
+        height: 200px;
+    }
+    #small-collage1 {
+        object-fit: cover;
+    }
+    .small-collage2 {
+        object-position: 10% 10%;
+    }
+}
+@media (max-width:700px) {
+    .cloud-container {
+        bottom: 0;
+    }
+    .cloud-img {
+        width: 110%;
+    }
+    .title-img-window {
+        height: 300px;
+    }
+}
+@media (max-width: 500px) {
+    .cloud-container {
+        bottom:10%;
+    }
+}
+@media (max-width: 460px) {
+    .man1 {
+        height: 400px;
+    }
+}
+@media (max-width: 370px) {
+    .title-img-window {
+        height: 250px;
+    }
+}
+@media (max-width: 350px) {
+    .man1 {
+        height: 350px;
+    }
+}
